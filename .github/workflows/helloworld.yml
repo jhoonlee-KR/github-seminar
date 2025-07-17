@@ -1,0 +1,15 @@
+//dev에 푸시 발생시 hello wrold를 출력하는 GitHub Actions 워크플로우
+name: Hello World Workflow
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Print Hello World
+        run: echo "Hello World"
