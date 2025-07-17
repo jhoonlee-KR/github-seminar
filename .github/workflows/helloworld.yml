@@ -1,5 +1,5 @@
 //dev에 푸시 발생시 hello wrold를 출력하는 GitHub Actions 워크플로우
-name: Hello World Workflow
+name: HelloWorld
 on:
   push:
     branches:
